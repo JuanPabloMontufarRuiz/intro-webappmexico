@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de México</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Bandera de México</h1>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h5>Esperanza</h5>
+                <div class="color-box shadow" id="box1"></div>
+                <input type="range" class="form-range" id="greenSlider" min="0" max="255">
+                <p id="hexCodeGreen" class="mt-2 hex-code"></p>
+            </div>
+            <div class="col-md-4">
+                <h5>Unidad</h5>
+                <div class="color-box shadow d-flex align-items-center justify-content-center" id="box2">
+                    <pre id="symbolGrid">
+@ @ @ @ @
+@ @ @ @ @
+@ @ @ @ @
+                    </pre>
+                </div>
+                <p id="hexCodeWhite" class="mt-2 hex-code">#FFFFFF</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Sangre de nuestros héroes nacionales</h5>
+                <div class="color-box shadow" id="box3"></div>
+                <input type="range" class="form-range" id="redSlider" min="0" max="255">
+                <p id="hexCodeRed" class="mt-2 hex-code"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
